@@ -1,0 +1,272 @@
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+html button, body button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #333;
+  background-color: #2595ea;
+  font-weight: bold;
+}
+
+html button:hover, body button:hover {
+  background-color: #137ac9;
+}
+
+html button:focus, body button:focus {
+  outline: none;
+}
+
+html input[type="submit"], body input[type="submit"] {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #333;
+  background-color: #2595ea;
+  font-weight: bold;
+}
+
+html input[type="submit"]:hover, body input[type="submit"]:hover {
+  background-color: #137ac9;
+}
+
+html input[type="submit"]:focus, body input[type="submit"]:focus {
+  outline: none;
+}
+
+html #main, body #main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+
+html #main #header, body #main #header {
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 580px) {
+  html #main #header, body #main #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+html #main #header section, body #main #header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html #main #header section img, body #main #header section img {
+  width: 80px;
+  height: auto;
+  padding-right: 20px;
+}
+
+html #main #header section h1, body #main #header section h1 {
+  letter-spacing: 2px;
+}
+
+html #main #header section h1 span, body #main #header section h1 span {
+  color: #333;
+  background: #2595ea;
+  padding: 2px 5px;
+}
+
+html #main #header nav ul, body #main #header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 400px) {
+  html #main #header nav ul, body #main #header nav ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  html #main #header nav ul, body #main #header nav ul {
+    margin-top: 25px;
+  }
+}
+
+html #main #header nav ul li a, body #main #header nav ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+html #main #header nav ul li a:hover, body #main #header nav ul li a:hover {
+  color: #2595ea;
+}
+
+html #main #form, body #main #form {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+html #main #form p, body #main #form p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 580px) {
+  html #main #form, body #main #form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+html #main #form input, body #main #form input {
+  padding: 7px;
+  border-radius: 5px;
+}
+
+html #main #boxes img, body #main #boxes img {
+  width: 180px;
+  height: auto;
+}
+
+html #main #boxes .box, body #main #boxes .box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html #main #boxes .box .innerBox, body #main #boxes .box .innerBox {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 46%;
+          flex: 0 1 46%;
+  line-height: 1.4;
+  padding: 3px;
+}
+
+html #main #boxes .box .innerBox h4, body #main #boxes .box .innerBox h4 {
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+html #main #boxes .box .innerBox p, body #main #boxes .box .innerBox p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  html #main #boxes, body #main #boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html #main .box, body #main .box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.5%;
+            flex: 0 1 48.5%;
+  }
+}
+
+@media screen and (min-width: 370px) {
+  html #main .box, body #main .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  html #main .box .innerBox, body #main .box .innerBox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 46%;
+            flex: 0 1 46%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  html #main #my-boxes, body #main #my-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  html #main #my-boxes .my-box, body #main #my-boxes .my-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 46%;
+            flex: 0 1 46%;
+  }
+}
+
+html #main footer, body #main footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html #main footer img, body #main footer img {
+  padding: 10px;
+}
+
+html #main #emb, body #main #emb {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html #main iframe, body #main iframe {
+  -webkit-box-shadow: 0px 0.5px 10px 0.1px #646464;
+          box-shadow: 0px 0.5px 10px 0.1px #646464;
+  border-radius: 20px;
+  max-width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
